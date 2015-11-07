@@ -6,7 +6,7 @@
 ## 初期設定・インストール
 ```.sh
 git clone git@github.com:DreamHackers/fx-future-forecast.git
-cd spa-service
+cd fx-future-forecast
 npm install
 ```
 
