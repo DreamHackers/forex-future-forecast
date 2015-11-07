@@ -7,7 +7,7 @@
 ```.sh
 git clone git@github.com:DreamHackers/fx-future-forecast.git
 cd fx-future-forecast
-npm install
+./setup.sh
 ```
 
 ## 起動
@@ -20,14 +20,19 @@ node app.js
 TODO React.js対応
 ```
 .
-├── Gruntfile.js 
+├── Gruntfile.js → 触らないでください
 ├── README.md
 ├── app.js → サーバサイドの処理を書いて下さい
+├── bower.json → 触らないでください
+├── bower_components → bower install後生成されます
+├── gulpfile.js → 触らないでください
 ├── index.html → UIはこちらに書いて下さい
 ├── node_modules → npm install後生成されます
-├── package.json → 新しいパッケージを追加する時はこちらに直接書かずに npm install --save-dev hogeとして下さい
-└── public
-    ├── css → cssファイルを突っ込んで下さい
-    ├── img → imageファイルを突っ込んで下さい
-    └── js → javascriptファイルを突っ込んで下さい
+├── package.json → 触らないでください
+├── public
+│   ├── css → cssファイルを突っ込んで下さい
+│   ├── img → imageファイルを突っ込んで下さい
+│   └──js → javascriptファイルを突っ込んで下さい
+└── setup.sh → セットアップ用のスクリプトです
+
 ```
