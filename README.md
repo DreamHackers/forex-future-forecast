@@ -5,7 +5,7 @@
 
 ## 初期設定・インストール
 ```.sh
-git clone git@github.com:DreamHackers/spa-service.git
+git clone git@github.com:DreamHackers/fx-future-forecast.git
 cd spa-service
 npm install
 ```
