@@ -1,0 +1,22 @@
+{
+  "name": "fx-future-forecast",
+  "description": "必勝！FX未来予想チャート徹底比較",
+  "main": "app.js",
+  "authors": [
+    "DreamHackers"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/DreamHackers/fx-future-forecast",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  }
+}
