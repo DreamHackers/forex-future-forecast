@@ -14,6 +14,7 @@ npm install
 ```.sh
 node app.js
 ```
+[こちら](http://localhost:9000/)にアクセスしてください
 
 ## 初期中身
 TODO React.js対応
