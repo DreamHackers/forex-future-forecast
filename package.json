@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DreamHackers/spa-service.git"
+    "url": "git+https://github.com/DreamHackers/fx-future-forecast.git"
   },
   "author": "DreamHackers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DreamHackers/spa-service/issues"
+    "url": "https://github.com/DreamHackers/fx-future-forecast/issues"
   },
-  "homepage": "https://github.com/DreamHackers/spa-service#readme",
+  "homepage": "https://github.com/DreamHackers/fx-future-forecast#readme",
   "devDependencies": {
     "express": "^4.13.3",
     "express-session": "^1.12.1",
