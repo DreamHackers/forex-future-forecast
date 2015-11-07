@@ -20,7 +20,6 @@ node app.js
 TODO React.js対応
 ```
 .
-├── Gruntfile.js → 触らないでください
 ├── README.md
 ├── app.js → サーバサイドの処理を書いて下さい
 ├── bower.json → 触らないでください
