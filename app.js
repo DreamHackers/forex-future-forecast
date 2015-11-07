@@ -1,0 +1,13 @@
+'use strict'
+
+const PORT = 9000;
+
+var http = require('http'),
+    request = require('request'),
+    express = require('express'),
+    app = express(),
+    server = http.Server(app);
+server.listen(PORT, () => {console.log(`server listening ... ${PORT}`)});
+
+app.get('/', (req,res) => res.sendFile(__dirname + '/index.html'));
+app.use(express.static('public'));

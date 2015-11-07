@@ -1,0 +1,27 @@
+{
+  "name": "fx-future-forecast",
+  "version": "0.0.1",
+  "description": "必勝！FX未来予想チャート徹底比較",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamHackers/spa-service.git"
+  },
+  "author": "DreamHackers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DreamHackers/spa-service/issues"
+  },
+  "homepage": "https://github.com/DreamHackers/spa-service#readme",
+  "devDependencies": {
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "log4js": "^0.6.27",
+    "request": "^2.65.0"
+  }
+}
