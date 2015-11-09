@@ -1,5 +1,5 @@
-// global lib
-$ = require('jquery');
+// all lib
+import React from 'react';
+import $ from 'jquery';
 
-// my lib
-var client = require('./client.js');
+import Client from './client.js';
