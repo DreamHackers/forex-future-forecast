@@ -22,8 +22,6 @@ TODO React.js対応
 .
 ├── README.md
 ├── app.js → サーバサイドの処理を書いて下さい
-├── bower.json → 触らないでください
-├── bower_components → bower install後生成されます
 ├── gulpfile.js → 触らないでください
 ├── index.html → UIはこちらに書いて下さい
 ├── node_modules → npm install後生成されます
@@ -31,7 +29,14 @@ TODO React.js対応
 ├── public
 │   ├── css → cssファイルを突っ込んで下さい
 │   ├── img → imageファイルを突っ込んで下さい
-│   └──js → javascriptファイルを突っ込んで下さい
+│   └── js
+│       ├── app.jsx → メインJSXファイル
+│       ├── client.js → クライアントサイドJSファイル
+│       ├── dest
+│       │   ├── bundle-js.js → JSプリコンパイル済み → gulp後に生成
+│       │   └── bundle-jsx.js → JSXプリコンパイル済み → gulp後に生成
+│       ├── helloworld.jsx → サブJSXファイル
+│       └── main.js → JSXヘッダファイル
 └── setup.sh → セットアップ用のスクリプトです
 
 ```
