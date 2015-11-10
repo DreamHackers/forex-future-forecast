@@ -3,6 +3,10 @@
 
 # Develop
 
+## 事前に必要なもの
+* node.js v5系 (nvmとかで管理してください)
+* npm
+
 ## 初期設定・インストール
 ```.sh
 git clone git@github.com:DreamHackers/fx-future-forecast.git
@@ -17,7 +21,6 @@ node app.js
 [こちら](http://localhost:9000/)にアクセスしてください
 
 ## 初期中身
-TODO React.js対応
 ```
 .
 ├── README.md
