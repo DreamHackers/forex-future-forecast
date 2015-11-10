@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDom from 'react-dom';
 import Message from './helloworld.jsx';
 
 class App extends React.Component {
@@ -25,7 +26,7 @@ class App extends React.Component {
   }
 };
 
-React.render(
+ReactDom.render(
   <App />,
   document.getElementById('container')
 );
