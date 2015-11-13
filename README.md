@@ -18,6 +18,16 @@ cd fx-future-forecast
 ## 起動 & 開発
 ```.sh
 pm2 start bin/www --watch
+[PM2] Spawning PM2 daemon
+[PM2] PM2 Successfully daemonized
+[PM2] Starting bin/www in fork_mode (1 instance)
+[PM2] Done.
+┌──────────┬────┬──────┬───────┬────────┬─────────┬────────┬─────────────┬──────────┐
+│ App name │ id │ mode │ pid   │ status │ restart │ uptime │ memory      │ watching │
+├──────────┼────┼──────┼───────┼────────┼─────────┼────────┼─────────────┼──────────┤
+│ www      │ 0  │ fork │ 14311 │ online │ 0       │ 0s     │ 13.645 MB   │  enabled │
+└──────────┴────┴──────┴───────┴────────┴─────────┴────────┴─────────────┴──────────┘
+
 ```
 [こちら](http://localhost:9000/)にアクセスしてください
 
