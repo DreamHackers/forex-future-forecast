@@ -6,6 +6,7 @@
 ## 事前に必要なもの
 * node.js v5系 (nvmとかで管理してください)
 * npm
+* pm2
 
 ## 初期設定・インストール
 ```.sh
@@ -14,9 +15,9 @@ cd fx-future-forecast
 ./setup.sh
 ```
 
-## 起動
+## 起動 & 開発
 ```.sh
-node app.js
+pm2 start bin/www --watch
 ```
 [こちら](http://localhost:9000/)にアクセスしてください
 
