@@ -5,14 +5,17 @@ var Sample = model.Sample;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  sampleFindAll('root',res);
 });
 
 router.get('/view', function(req, res) {
-  Sample.find({}, function(err, items) {
-    console.log(items);
-    res.render('index', {title: 'display', items: items})
-  });
+  sampleFindAll('view',res);
 });
+
+function sampleFindAll(title,res) {
+  Sample.find({}, function(err, items) {
+    res.render('index', {title: title, items: items})
+  });
+}
 
 module.exports = router;

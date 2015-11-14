@@ -1,3 +1,3 @@
 npm install
-npm install -g gulp
-gulp
+npm install -g pm2
+
