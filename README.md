@@ -6,7 +6,7 @@
 ## 事前に必要なもの
 * node.js v5系 (nvmとかで管理してください)
 * npm
-* pm2
+* pm2 (`npm install -g pm2`)
 
 ## 初期設定・インストール
 ```.sh
@@ -14,6 +14,9 @@ git clone git@github.com:DreamHackers/fx-future-forecast.git
 cd fx-future-forecast
 ./setup.sh
 ```
+
+## mongo セッティング
+https://github.com/DreamHackers/fx-future-forecast/wiki/mongodb%E7%96%8E%E9%80%9A
 
 ## 起動 & 開発
 ```.sh
@@ -30,27 +33,5 @@ pm2 start bin/www --watch
 
 ```
 [こちら](http://localhost:3000/)にアクセスしてください
-
-## 初期中身
-```
-.
-├── README.md
-├── app.js → サーバサイドの処理を書いて下さい
-├── gulpfile.js → 触らないでください
-├── index.html → UIはこちらに書いて下さい
-├── node_modules → npm install後生成されます
-├── package.json → 触らないでください
-├── public
-│   ├── css → cssファイルを突っ込んで下さい
-│   ├── img → imageファイルを突っ込んで下さい
-│   └── js
-│       ├── app.jsx → メインJSXファイル
-│       ├── client.js → クライアントサイドJSファイル
-│       ├── dest
-│       │   ├── bundle-js.js → JSプリコンパイル済み → gulp後に生成
-│       │   └── bundle-jsx.js → JSXプリコンパイル済み → gulp後に生成
-│       ├── helloworld.jsx → サブJSXファイル
-│       └── main.js → JSXヘッダファイル
-└── setup.sh → セットアップ用のスクリプトです
 
 ```
