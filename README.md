@@ -1,3 +1,6 @@
+# Summary
+https://pollseed.gitbooks.io/fx-future-forecast-doc/content/index.html
+
 # fx-future-forecast
 必勝！FX未来予想チャート徹底比較についてのリポジトリです
 
