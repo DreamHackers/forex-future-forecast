@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var helmet = require('helmet');
+var basicAuth = require('basic-auth-connect');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -12,6 +13,7 @@ var users = require('./routes/users');
 var app = express();
 app.use(helmet());
 app.use(helmet.noCache());
+app.use(basicAuth('dream', 'hackers'));
 
 var mongoose = require('mongoose');
 var model = require('./model/sample');

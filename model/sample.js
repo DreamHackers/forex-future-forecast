@@ -1,8 +1,9 @@
 var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://localhost/fx-dev');
+var mongoURI = 'mongodb://localhost:27017/fx-dev';
+var db = mongoose.connect(mongoURI);
 
 mongoose.connection.on('connected', function() {
-  console.log('mongoose URI locatest ' + 'mongodb://localhost/fx-dev');
+  console.log('mongoose URI locatest ' + mongoURI);
 });
 
 function validator(v) {
