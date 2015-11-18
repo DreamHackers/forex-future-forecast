@@ -5,3 +5,7 @@ machine:
 dependencies:
   override:
       - npm install
+
+test:
+  post:
+      - ./test.sh
