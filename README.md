@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/DreamHackers/fx-future-forecast/tree/master.svg?style=svg)](https://circleci.com/gh/DreamHackers/fx-future-forecast/tree/master)
+
 # Summary
 https://pollseed.gitbooks.io/fx-future-forecast-doc/content/index.html
 
