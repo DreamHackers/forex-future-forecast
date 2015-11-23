@@ -17,8 +17,14 @@ app.use(helmet.noCache());
 app.use(basicAuth('dream', 'hackers'));
 
 var mongoose = require('mongoose');
-//var model = require('./model/sample');
-//var Sample = model.Sample;
+var uristring = process.env.MONGOLAB_URI || 'mongodb://localhost/fx-dev';
+mongoose.connect(uristring, function (err, res) {
+  if (err) { 
+      console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+    } else {
+        console.log ('Succeeded connected to: ' + uristring);
+      }
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
