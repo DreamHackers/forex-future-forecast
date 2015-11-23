@@ -7,7 +7,7 @@ var currentRateUrl = 'http://www.gaitameonline.com/rateaj/getrate'
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  getCurrentRate('index', res);
+  getCurrentRate('index', 'Forex Future Forecast', res);
 });
 
 router.get('/view', function(req, res) {
@@ -20,7 +20,7 @@ function sampleFindAll(title,res) {
   });
 }
 
-function getCurrentRate(title, response) {
+function getCurrentRate(file, title, response) {
   http.get(currentRateUrl, (res) => {
     var body = '';
     res.setEncoding('utf8');
@@ -31,7 +31,7 @@ function getCurrentRate(title, response) {
 
     res.on('end', (res) => {
       ret = JSON.parse(body);
-      response.render(title, {title: title, items: ret.quotes})
+      response.render(file, {title: title, items: ret.quotes})
     });
   }).on('error', (e) => {
     console.log(e.message);
