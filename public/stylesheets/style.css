@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+tr:nth-child(even) {
+ background: #f9f9f9;
+}
