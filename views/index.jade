@@ -4,8 +4,20 @@ block content
   h1= title
   p Welcome to #{title}
 
-  ul
+  table
+   tr
+    th 通貨ペア
+    th 始値
+    th 最高値
+    th 最安値
+    th 売値（Bid）
+    th 買値（Ask）
    - items.forEach(function(item) {
-     li #{item.name}
+     tr
+      td #{item.currencyPairCode}
+      td #{item.open}
+      td #{item.high}
+      td #{item.low}
+      td #{item.bid}
+      td #{item.ask}
    - })
-
