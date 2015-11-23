@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var model = require('../model/sample');
-var Sample = model.Sample;
+//var model = require('../model/sample');
+//var Sample = model.Sample;
 var http = require('http');
 var currentRateUrl = 'http://www.gaitameonline.com/rateaj/getrate'
 
@@ -10,15 +10,15 @@ router.get('/', function(req, res, next) {
   getCurrentRate('index', 'Forex Future Forecast', res);
 });
 
-router.get('/view', function(req, res) {
-  sampleFindAll('view',res);
-});
+//router.get('/view', function(req, res) {
+//  sampleFindAll('view',res);
+//});
 
-function sampleFindAll(title,res) {
-  Sample.find({}, function(err, items) {
-    res.render('index', {title: title, items: items})
-  });
-}
+//function sampleFindAll(title,res) {
+//  Sample.find({}, function(err, items) {
+//    res.render('index', {title: title, items: items})
+ // });
+//}
 
 function getCurrentRate(file, title, response) {
   http.get(currentRateUrl, (res) => {

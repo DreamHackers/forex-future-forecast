@@ -17,8 +17,8 @@ app.use(helmet.noCache());
 app.use(basicAuth('dream', 'hackers'));
 
 var mongoose = require('mongoose');
-var model = require('./model/sample');
-var Sample = model.Sample;
+//var model = require('./model/sample');
+//var Sample = model.Sample;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
