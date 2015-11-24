@@ -4,7 +4,7 @@
 
 ![logo](public/images/logo.png)
 
-必勝！FX未来予想チャート徹底比較についてのリポジトリです
+必勝！FX未来予想チャート徹底比較についてのリポジトリです。
 
 # Summary
 
