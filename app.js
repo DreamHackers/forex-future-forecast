@@ -14,7 +14,7 @@ var users = require('./routes/users');
 var app = express();
 app.use(helmet());
 app.use(helmet.noCache());
-app.use(basicAuth('dream', 'hackers'));
+app.use(basicAuth(process.env.BASIC_AUTH_ID, process.env.BASIC_AUTH_PASSWORD));
 
 var mongoose = require('mongoose');
 var uristring = process.env.MONGOLAB_URI || 'mongodb://localhost/fx-dev';
